@@ -1,6 +1,7 @@
-# Meta-Analysis Dashboard for Binary Outcomes
+# MetaAnalysisApp: Meta-Analysis Dashboard for Binary Outcomes
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md) **An Interactive R Shiny Application for Meta-Analysis of Binary Data (Risk Ratios & Odds Ratios)**
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE.md)
+**An Interactive R Shiny Application for Meta-Analysis of Binary Data (Risk Ratios & Odds Ratios)**
 
 ## Overview
 
@@ -64,19 +65,20 @@ The tool aims to make advanced meta-analysis techniques accessible through a use
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [Link to Your Repository]
-    cd [Repository Folder Name]
-    ```
+    git clone [https://github.com/mahmood789/JOSSsubmission-)
+    cd your_repository_name
+  
+https://github.com/mahmood789/JOSSsubmission-
 
 2.  **Install Dependencies:**
     This project uses `renv` for package management to ensure reproducibility.
 
     * Open the project in RStudio or navigate to the project directory in your R console.
-    * Run the following command in the R console to install all required packages from the `renv.lock` file:
+    * Run the following command in the R console to install all required packages from the `renv.lock` file (if provided):
         ```R
         renv::restore()
         ```
-    * **Note:** The Bayesian analysis tab requires the `bayesmeta` package. While `renv` should handle this, if you encounter issues specifically with Bayesian analysis, you might need to install it manually: `install.packages("bayesmeta")`. The meta-regression correlation plot requires `PerformanceAnalytics`, and VIF calculation requires `car`.
+    * **Note:** The Bayesian analysis tab requires the `bayesmeta` package. While `renv` should handle this, if you encounter issues specifically with Bayesian analysis, you might need to install it manually: `install.packages("bayesmeta")`. The meta-regression correlation plot requires `PerformanceAnalytics`, and VIF calculation requires `car`. If `renv` is not used, ensure all packages listed in the `library()` calls at the top of `app.R` are installed.
 
     *(Alternative if not using `renv`:)*
     * *(Ensure you have the `remotes` package: `install.packages("remotes")`)*
@@ -132,42 +134,42 @@ Automated tests are included to verify core functionality. To run the tests:
 2.  Open R in the project directory.
 3.  Run the following command:
     ```R
-    # If using testthat directly
-    testthat::test_dir("tests/testthat")
+    # If using testthat directly for non-reactive parts:
+    # testthat::test_dir("tests/testthat")
 
-    # Or if using shinytest2 for application testing
+    # If using shinytest2 for application testing:
     # shinytest2::test_app()
     ```
-    *(Modify the commands above based on your specific testing setup)*
+    *(Modify the commands above based on your specific testing setup and directory structure, e.g., tests might be in a `tests/` folder)*
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit issues or pull requests to the [repository issue tracker]().
+Contributions are welcome! Please feel free to submit issues or pull requests to the [repository issue tracker](https://github.com/your_username/your_repository_name/issues).
 
-See `CONTRIBUTING.md` for more details. *(Optional: Create this file)*
+*(Optional: See `CONTRIBUTING.md` for more details. Create this file if you have specific guidelines.)*
 
 ## Authors
 
-Mahmood Ahmad, MBBS
-Abullahi Noot, MBBS
-Parichatra Homhuan, MBBS
-Manpreet Kour, MBBS
+* Mahmood Ahmad, MBBS
+* Abdullahi Noot, MBBS
+* Parichatra Homhuan, MBBS
+* Manpreet Kour, MBBS
 
-*(Note: JOSS recommends listing only core contributors who meet their authorship criteria directly in the paper/README, potentially linking to a full list if extensive)*
 
 ## Acknowledgements
 
-We acknowledge the support and encouragement from the Ahmadiyya Muslim Research Association, Luciano Candilio, [Add others if applicable].
+We acknowledge the support and encouragement from the Ahmadiyya Muslim Research Association and Luciano Candilio.
 
 ## License
 
-This project is licensed under the [License Name] - see the [LICENSE.md](LICENSE.md) file for details. *(Create a LICENSE.md file with the text of your chosen OSI-approved license, e.g., MIT)*
+This project is licensed under the Apache License, Version 2.0 - see the [LICENSE.md](LICENSE.md) file for details. *(Ensure LICENSE.md exists and contains the Apache 2.0 text)*
 
 ## Citation
 
-If you use this software in your research, please cite it as follows:
+If you use this software, please cite it as follows:
 
-*(Placeholder - Replace with JOSS paper citation once accepted)*
-> [Author(s)]. (Year). [Software Title]: A Shiny App for Binary Outcome Meta-Analysis. *Journal of Open Source Software*, [Volume]([Issue]), [ArticleNumber]. [https://doi.org/[JOSS_DOI]]()
+> Ahmad M., Noot A., Homhuan P., Kour M. (2025). MetaAnalysisApp: An Interactive R Shiny Dashboard for Binary Outcome Meta-Analysis. *Journal of Open Source Software*, [Volume]([Issue]), [ArticleNumber]. [https://doi.org/[JOSS_DOI]]()
 
-You should also cite the underlying R packages used for the analysis, particularly `meta` (Balduzzi et al., 2019), `metafor` (Viechtbauer, 2010), `dmetar` (Harrer et al., 2021), and `bayesmeta` (Röver, 2020), as appropriate for the analyses performed. Refer to the documentation of these packages for their preferred citation formats.# JOSSsubmission-
+*(Replace [Volume], [Issue], [ArticleNumber], and the DOI with the actual details upon publication by JOSS)*
+
+We have cited the underlying R packages used for the analysis, particularly `meta` [@metaPackage], `metafor` [@metaforPackage], `dmetar` [@dmetarPackage], and `bayesmeta` [@bayesmetaPackage], as appropriate for the analyses performed. Refer to the documentation of these packages for their preferred citation formats (e.g., using `citation("meta")` in R).
