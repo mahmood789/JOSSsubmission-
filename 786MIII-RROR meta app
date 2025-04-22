@@ -17,7 +17,7 @@ ui <- bs4DashPage(
   title = "786-MIII Risk Ratio/Odds Ratio Meta-Analysis Dashboard",
   
   header = bs4DashNavbar(
-    title = "Meta-Analysis Dashboard",
+    title = "786-MIII Risk Ratio/Odds Ratio Meta-Analysis Dashboard",
     status = "primary"
   ),
   
