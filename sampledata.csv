@@ -1,0 +1,16 @@
+author,eventintervention,totalintervention,eventcontrol,totalcontrol,year,subgroup,Reg,Reg2,Reg3
+Smith 2015,10,100,20,100,2015,Low Risk,0.5,15,30
+Chen 2016,15,150,25,145,2016,High Risk,0.8,25,35
+Miller 2016,8,50,12,55,2016,Low Risk,0.4,18,28
+Garcia 2017,22,200,35,210,2017,High Risk,0.7,22,40
+Kim 2017,5,80,10,85,2017,Low Risk,0.6,12,33
+Jones 2018,30,250,40,240,2018,High Risk,0.9,28,45
+Williams 2018,12,120,18,125,2018,Low Risk,0.3,20,31
+Ahmed 2019,18,175,28,180,2019,High Risk,1.1,26,42
+Lee 2019,9,90,15,95,2019,Low Risk,0.5,16,29
+Patel 2020,25,220,38,225,2020,High Risk,1.0,30,48
+Brown 2020,7,60,11,65,2020,Low Risk,0.2,14,27
+Singh 2021,35,300,50,310,2021,High Risk,1.2,32,50
+Davis 2021,11,110,16,115,2021,Low Risk,0.6,19,36
+Wilson 2022,20,190,33,195,2022,High Risk,0.9,27,44
+Taylor 2022,6,70,9,75,2022,Low Risk,0.4,13,30
